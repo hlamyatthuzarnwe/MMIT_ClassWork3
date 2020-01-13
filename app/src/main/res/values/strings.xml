@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">ClassWork3</string>
+
+    <string name="txt_our_team"><b>Our Team</b></string>
+
+    <string name="txt_one"> <b>Adams G</b></string>
+
+    <string name="txt_one_position">Executive Officer</string>
+
+    <string name="txt_two"> <b>Betty L</b></string>
+
+    <string name="txt_two_position">Marketing</string>
+
+    <string name="txt_three"> <b>Roberts</b></string>
+
+    <string name="txt_three_position">Business Analyst</string>
+
+    <string name="txt_four"> <b>Miller W</b></string>
+
+    <string name="txt_four_position">UX Designer</string>
+
+    <string name="txt_five"> <b>Kelvin John</b></string>
+
+    <string name="txt_five_position">Web Developer</string>
+
+    <string name="txt_six"> <b>Laura M</b></string>
+
+    <string name="txt_six_position">Mobile Dev</string>
+    
+    <string name="txt_mission"><b>Mission</b></string>
+
+
+</resources>

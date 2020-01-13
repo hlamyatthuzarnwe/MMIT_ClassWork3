@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_our_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_our_team"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/human_two"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:clipToOutline="true"-->
+<!--        android:src="@drawable/human_two"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/txt_our_team"/>-->
+
+    <com.androdocs.circleimagelibrary.CircleImageView
+        android:id="@+id/civ_human_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/human_one"
+        app:border_color="@color/colorBlack"
+        app:border_width="2dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_our_team"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_name_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_one"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/civ_human_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txt_name_two"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_one_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_one_position"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_one"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <com.androdocs.circleimagelibrary.CircleImageView
+        android:id="@+id/civ_human_two"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/human_two"
+        app:border_color="@color/colorBlack"
+        app:border_width="2dp"
+        app:layout_constraintLeft_toRightOf="@id/civ_human_one"
+        app:layout_constraintRight_toLeftOf="@id/civ_human_three"
+        app:layout_constraintTop_toBottomOf="@id/txt_our_team" />
+
+    <TextView
+        android:id="@+id/txt_name_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_two"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/civ_human_two"
+        app:layout_constraintLeft_toRightOf="@id/txt_name_one"
+        app:layout_constraintRight_toLeftOf="@+id/txt_name_three"/>
+
+    <TextView
+        android:id="@+id/txt_two_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_two_position"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_two"
+        app:layout_constraintLeft_toRightOf="@id/txt_one_position"
+        app:layout_constraintRight_toLeftOf="@+id/txt_three_position"/>
+
+    <com.androdocs.circleimagelibrary.CircleImageView
+        android:id="@+id/civ_human_three"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/human_three"
+        app:border_color="@color/colorBlack"
+        app:border_width="2dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_name_two"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_our_team" />
+
+    <TextView
+        android:id="@+id/txt_name_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_three"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/civ_human_three"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_name_two"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_three_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_three_position"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_two_position"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_three"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.androdocs.circleimagelibrary.CircleImageView
+        android:id="@+id/civ_human_four"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/human_four"
+        app:border_color="@color/colorBlack"
+        app:border_width="2dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_one_position"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_name_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_four"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/civ_human_four"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txt_name_two"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_four_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_four_position"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_four"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <com.androdocs.circleimagelibrary.CircleImageView
+        android:id="@+id/civ_human_five"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/human_five"
+        app:border_color="@color/colorBlack"
+        app:border_width="2dp"
+        app:layout_constraintLeft_toRightOf="@id/civ_human_four"
+        app:layout_constraintRight_toLeftOf="@id/civ_human_six"
+        app:layout_constraintTop_toBottomOf="@id/txt_two_position" />
+
+    <TextView
+        android:id="@+id/txt_name_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_five"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/civ_human_five"
+        app:layout_constraintLeft_toRightOf="@id/txt_name_four"
+        app:layout_constraintRight_toLeftOf="@+id/txt_name_six"/>
+
+    <TextView
+        android:id="@+id/txt_five_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_five_position"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_five"
+        app:layout_constraintLeft_toRightOf="@id/txt_four_position"
+        app:layout_constraintRight_toLeftOf="@+id/txt_six_position"/>
+
+    <com.androdocs.circleimagelibrary.CircleImageView
+        android:id="@+id/civ_human_six"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/human_six"
+        app:border_color="@color/colorBlack"
+        app:border_width="2dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_name_five"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_three_position" />
+
+    <TextView
+        android:id="@+id/txt_name_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_six"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/civ_human_six"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_name_five"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_six_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_six_position"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_five_position"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_six"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_mission"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_four_position"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_mission_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_mission"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:letterSpacing="0.01"
+        android:text="Duis tellus metus,elementum a lectus id, sliquet
+interdum marius.Nam bibendum efficitur sollicitudin. Proin eleifend libero
+velit, nec fringilla dolor finibus quis. nMorbi eu libero pellentesque, rutrum metus quis,
+blandit est. Fusce bibendum accumsan nisi vultate feugiat. In fermuntum
+laoreet euismod. Paresent sem nisl, facilisis eget odit at, rhoncus scelerisque ipsum. Nulla
+orci dui, dignissim a risus ut, lobortis porttitor velit."/>
+
+    <TextView
+        android:id="@+id/txt_mission_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_mission_long"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="0.01"
+        android:text="Nulla id lectus metus. Maecenas a loream in odio
+auctor facilisis non vitae nunc. Sed malesuada volutpat massa. Paresent sit amet lacinia augue."/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
